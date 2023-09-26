@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main>
+        <h1 class="text-center text-5xl text-red-500 py-5">Js Listiener </h1>        
+      <div  class="flex gap-3 w-6/12 mx-auto justify-around my-5">
+          <div  class="bg-green-300 p-4 rounded text-center text-2xl">
+            <p>current balance</p>
+            <p> $<span id="curentBalanceContent">200</span></p>
+          </div>
+          <div  class="bg-green-300 p-4 rounded text-center text-2xl">
+            <p>widrow balance</p>
+            <p> $<span id="privoiusBalanceContent">0</span></p>
+          </div>
+          <div  class="bg-green-300 p-4 rounded text-center text-2xl">
+            <p>Deposit balance</p>
+            <p> $<span id="depositBalanceContent">0</span></p>
+          </div>
+    </div>
+
+
+
+        <p class="text-center">
+
+            <input id="input" type="text" placeholder="$ Amount..." class="border border-solid border-green-400 p-2 rounded " >
+            
+               <p class="text-center m-4"> 
+                <button onclick="handleDeposit()" class=" bg-red-300 text-xl py-3 rounded px-2" id="deposit">Deposit </button>
+                <button onclick="handleWidrow()" class=" bg-red-300 text-xl py-3 rounded px-2" id="widrow">Widrow </button>
+              </p>
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
